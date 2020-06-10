@@ -63,10 +63,14 @@
 <% end %>
 
 <%= form.file_field :archive %>
+<br>
 
 <div class="actions" >
-  <%= form.button :submit, class: 'button is-info' %>
+  <%= form.button :submit, class: 'button is-info'  %>
 </div>
+<br>
+<br>
+<%= link_to 'Delete All Items', home_trash_em_all_path, class:'button is-danger pulled rigth', data: { confirm: 'Are you sure?' }%>
 <% end %>
     </div>
   </div>

@@ -44,15 +44,5 @@ ActiveRecord::Schema.define(version: 2020_06_10_190226) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "purchaser_names", force: :cascade do |t|
-    t.string "item_description"
-    t.float "item_price"
-    t.integer "purchase_count"
-    t.string "merchant_address"
-    t.string "merchant_name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
 end
