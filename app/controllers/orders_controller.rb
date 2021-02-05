@@ -6,6 +6,7 @@ class OrdersController < ApplicationController
   def index
     @orders = Order.all
     @order = Order.new
+    
   end
 
   # POST /orders
@@ -13,7 +14,7 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(order_params)
     load_archive
-    create_orders    
+    create_orders
     redirect_to orders_path
   end
 
